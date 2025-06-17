@@ -1,0 +1,14 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: formatting
+      run: bunx pretty-quick --staged
+
+    - name: linting
+      glob: '*.{ts,tsx}'
+      run: bun run eslint {staged_files}
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: bun run lint:commit
