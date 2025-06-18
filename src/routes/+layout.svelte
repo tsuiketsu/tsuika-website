@@ -1,7 +1,15 @@
 <script lang="ts">
-	import '../app.css';
+  import '../app.css';
+  import Header from '../components/header.svelte';
+  import { ModeWatcher } from 'mode-watcher';
 
-	let { children } = $props();
+  let { children } = $props();
 </script>
 
-{@render children()}
+<Header />
+
+<ModeWatcher />
+
+<div class="mx-auto flex w-full max-w-6xl flex-col gap-40 px-4">
+  {@render children()}
+</div>
