@@ -1,6 +1,8 @@
 <script>
   import ThemeToggle from './theme-toggle.svelte';
   import Button from './ui/button.svelte';
+
+  const siteUrl = `https://app.${import.meta.env.VITE_DOMAIN}`;
 </script>
 
 <div class="bg-background sticky top-0 z-20 flex w-full justify-center text-sm">
@@ -11,7 +13,6 @@
     <div class="ml-auto">
       <ThemeToggle />
     </div>
-    <Button variant="outline">Login</Button>
-    <Button>Get Started</Button>
+    <Button href={`${siteUrl}/dashboard`}>Get Started</Button>
   </div>
 </div>
