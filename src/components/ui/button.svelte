@@ -7,7 +7,7 @@
   import { tv, type VariantProps } from 'tailwind-variants';
 
   export const buttonVariants = tv({
-    base: 'inline-flex items-center justify-center gap-1 rounded-lg text-sm select-none active:scale-98',
+    base: 'inline-flex items-center justify-center gap-1 rounded-lg text-sm select-none active:scale-98 cursor-pointer',
     variants: {
       variant: {
         default: 'bg-primary text-primary-foreground hover:bg-primary/90',
