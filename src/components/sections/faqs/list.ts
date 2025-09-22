@@ -9,14 +9,10 @@ export const faqs = [
   },
   {
     q: 'Is my data secure?',
-    a: "Your data is not end-to-end encrypted by default, but I plan to introduce an optional 'encrypted folder' feature for sensitive bookmarks. Encrypting all data would impact performance, especially for full-text search with large bookmark collections. Public links remain unencrypted unless you add sensitive descriptions, which can be encrypted upon request."
+    a: 'Your data is not end-to-end encrypted by default, but you can create a encrypted password protected folder and add bookmarks there.'
   },
   {
     q: 'Is my account protected?',
     a: 'Yes, your account is secure. Safety measures are implemented from registration to login, and you can enable two-factor authentication (2FA) using authenticator apps. Email or phone OTPs are not supported for added security.'
-  },
-  {
-    q: 'Does this work offline?',
-    a: 'Offline support is not available yet. I plan to implement Progressive Web App (PWA) functionality and offline capabilities after completing core features like encrypted folders and other enhancements.'
   }
 ];
