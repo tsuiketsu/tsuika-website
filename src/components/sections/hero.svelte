@@ -26,7 +26,12 @@
   </p>
 
   <div class="inline-flex items-center space-x-2">
-    <Button variant="secondary" size="lg" class="w-28">Demo</Button>
+    <Button
+      href="https://demo-app.tsuika.space/login"
+      variant="secondary"
+      size="lg"
+      class="w-28">Demo</Button
+    >
     <Button href="https://github.com/ImRayy/tsuika" size="lg" class="w-28">
       <span class="iconify tabler--brand-github"></span>
       GitHub
