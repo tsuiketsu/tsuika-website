@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import path from 'path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -17,7 +18,10 @@ const config = {
         include: ['/*'],
         exclude: ['<all>']
       }
-    })
+    }),
+    alias: {
+      '@/*': path.resolve('./src/*')
+    }
   }
 };
 
