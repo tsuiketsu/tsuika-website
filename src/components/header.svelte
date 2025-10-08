@@ -13,6 +13,6 @@
     <div class="ml-auto">
       <ThemeToggle />
     </div>
-    <Button href={`${siteUrl}/dashboard`}>Get Started</Button>
+    <Button href={`${siteUrl}/login`}>Get Started</Button>
   </div>
 </div>
