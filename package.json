@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "deploy": "bunx wrangler pages deploy .svelte-kit/cloudflare",
+    "deploy": "bun run build && bunx wrangler pages deploy .svelte-kit/cloudflare",
     "preview": "vite preview",
     "start": "vite start",
     "prepare": "svelte-kit sync || echo ''",
