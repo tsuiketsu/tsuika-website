@@ -6,7 +6,7 @@
 </script>
 
 <div
-  class="flex min-h-32 gap-4 rounded-md border p-3 text-start select-none md:flex-col"
+  class="flex min-h-32 flex-col gap-4 rounded-md border p-3 text-start select-none"
 >
   <span
     class="bg-card text-primary flex size-10 shrink-0 items-center justify-center rounded-sm border"

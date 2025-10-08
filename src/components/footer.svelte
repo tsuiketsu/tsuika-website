@@ -25,8 +25,7 @@
       </Button>
     {/each}
   </div>
-  <span class="text-sm">
-    Copyright @ {new Date().getFullYear()} - Tsuika, Made by <b>Ray</b> with ❤️ &amp;
-    ⚡️
+  <span class="text-muted-foreground text-sm">
+    Copyright @ {new Date().getFullYear()} - Tsuika, Made by <b>Ray</b>
   </span>
 </div>

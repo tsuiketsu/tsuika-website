@@ -32,12 +32,6 @@ export const highlights = [
     icon: 'tabler--server'
   },
   {
-    title: 'Theming',
-    description:
-      'Tired of a single color scheme? Explore a variety of themes and fonts to customize your experience.',
-    icon: 'tabler--color-swatch'
-  },
-  {
     title: 'Rich Previews',
     description:
       'Automatically fetches titles, descriptions, thumbnails, and favicons, providing a seamless and essential preview feature.',

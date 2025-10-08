@@ -37,6 +37,6 @@
 
 <ModeWatcher />
 
-<div class="mx-auto flex w-full max-w-6xl flex-col gap-30 md:gap-40">
+<div class="mx-auto flex w-full max-w-6xl flex-col gap-16 px-4 md:gap-40">
   {@render children()}
 </div>
