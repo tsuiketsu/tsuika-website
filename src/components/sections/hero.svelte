@@ -7,7 +7,7 @@
 </script>
 
 <div class="w-full space-y-6 pt-30 text-center text-lg md:space-y-4 md:pt-40">
-  <h1 class="text-4xl md:text-6xl">
+  <h1 class="px-4 text-4xl md:text-6xl">
     Tsuika is your
     <br />
     <i>
@@ -25,7 +25,7 @@
     for faster retrieval. Built for the data hoarders out there!
   </p>
 
-  <div class="inline-flex items-center space-x-2">
+  <div class="inline-flex items-center space-x-2 px-4">
     <Button
       href="https://demo-app.tsuika.space/login"
       variant="secondary"
@@ -37,13 +37,12 @@
       GitHub
     </Button>
   </div>
-  <div
-    class="relative mt-6 h-[calc(var(--spacing)*96*2.5)] overflow-hidden rounded-lg rounded-tr-none rounded-br-none border border-r-0 transition-transform sm:h-[calc(var(--spacing)*96*1.5)] md:mt-10 md:h-auto md:rounded-tr-lg md:rounded-br-lg md:border-r"
-  >
+  <div class="pl-4 md:mt-8 md:pr-4">
     <Thumbnail
       {light}
       {dark}
-      class="origin-top-left scale-250 border-none p-0.5 transition-transform sm:scale-150 md:scale-100 md:p-1"
+      class="md:border-r-border h-[34rem] overflow-hidden  rounded-tr-none rounded-br-none border-r-transparent p-0.5 transition-transform  md:h-auto md:rounded-tr-lg md:rounded-br-lg md:p-1"
+      imageClass="size-full object-cover object-left"
     />
   </div>
 </div>

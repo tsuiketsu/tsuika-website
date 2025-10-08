@@ -3,7 +3,7 @@
   import { highlights } from './list';
 </script>
 
-<div class="text-center">
+<div class="px-4 text-center">
   <span class="font-bold text-teal-600 dark:text-teal-400">Just Why?</span>
   <h2 class="pb-10 text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
     Yet another bookmark manager?<br /> Why pick us?

@@ -4,7 +4,7 @@
   import { faqs } from './list';
 </script>
 
-<div class="mx-auto w-full text-center sm:w-xl">
+<div class="mx-auto w-full px-4 text-center sm:w-xl">
   <SectionTitle subtext="Have doubts?">Frequently Asked Questions</SectionTitle>
   <div class="rounded-lg border p-4 py-2 pb-0">
     {#each faqs as faq, idx (`faq-${idx}`)}

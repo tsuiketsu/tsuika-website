@@ -6,9 +6,10 @@
     light: string;
     dark: string;
     class?: string;
+    imageClass?: string;
   }
 
-  let { light, dark, class: className }: Props = $props();
+  let { light, dark, class: className, imageClass }: Props = $props();
 
   let banner = $state('');
   let isLoading = $state(true);
@@ -38,7 +39,7 @@
   <img
     onload={handleLoading}
     src={`https://ik.imagekit.io/rayshold/projects/tsuika/${banner}`}
-    class="rounded-sm"
+    class={cn('rounded-sm', imageClass)}
     alt=""
   />
 </div>
