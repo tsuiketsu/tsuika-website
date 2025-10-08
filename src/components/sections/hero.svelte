@@ -6,7 +6,7 @@
   const dark = 'inside-folder-dark.webp?updatedAt=1750176273389';
 </script>
 
-<div class="w-full space-y-4 pt-20 text-center text-lg md:pt-48">
+<div class="w-full space-y-6 pt-30 text-center text-lg md:space-y-4 md:pt-40">
   <h1 class="text-4xl md:text-6xl">
     Tsuika is your
     <br />
@@ -37,5 +37,13 @@
       GitHub
     </Button>
   </div>
-  <Thumbnail {light} {dark} class="mt-6 md:mt-28" />
+  <div
+    class="relative mt-6 h-[calc(var(--spacing)*96*2.5)] overflow-hidden rounded-lg rounded-tr-none rounded-br-none border border-r-0 transition-transform sm:h-[calc(var(--spacing)*96*1.5)] md:mt-10 md:h-auto md:rounded-tr-lg md:rounded-br-lg md:border-r"
+  >
+    <Thumbnail
+      {light}
+      {dark}
+      class="origin-top-left scale-250 border-none p-0.5 transition-transform sm:scale-150 md:scale-100 md:p-1"
+    />
+  </div>
 </div>

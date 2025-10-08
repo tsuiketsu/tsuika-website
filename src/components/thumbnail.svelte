@@ -29,7 +29,6 @@
     'relative flex items-center justify-center rounded-md border p-1',
     className
   )}
-  style="aspect-ratio: 1.87/1;"
 >
   {#if isLoading}
     <div
@@ -39,7 +38,7 @@
   <img
     onload={handleLoading}
     src={`https://ik.imagekit.io/rayshold/projects/tsuika/${banner}`}
-    alt=""
     class="rounded-sm"
+    alt=""
   />
 </div>
