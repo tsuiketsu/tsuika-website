@@ -9,3 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 export type WithElementRef<T, U extends HTMLElement = HTMLElement> = T & {
   ref?: U | null;
 };
+
+export function serializeSchema(obj: unknown) {
+  return `<script type="application/ld+json">${JSON.stringify(obj)}</script>`;
+}

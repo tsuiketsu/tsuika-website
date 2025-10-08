@@ -1,7 +1,9 @@
 <script lang="ts">
+  import { page } from '$app/state';
   import '../app.css';
   import Header from '../components/header.svelte';
   import { ModeWatcher } from 'mode-watcher';
+  import { serializeSchema } from '@/utils';
 
   let { children } = $props();
 
@@ -31,7 +33,50 @@
     matcher.addEventListener('change', onUpdate);
     return () => matcher.removeEventListener('change', onUpdate);
   });
+
+  const title = 'Tsuika';
+  const description = 'Your bookmarking friend';
+  const author = 'ImRayy';
+  const canonicalURL = new URL(page.url.pathname, page.url).toString();
+  const socialImageURL =
+    'https://ik.imagekit.io/rayshold/projects/tsuika/tsuika-screenshot.webp';
+
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: title,
+    url: canonicalURL,
+    description,
+    image: `${socialImageURL}`
+  };
 </script>
+
+<svelte:head>
+  <link rel="canonical" href={canonicalURL} />
+
+  <!-- General Meta Tags -->
+  <title>{title}</title>
+  <meta name="title" content={title} />
+  <meta name="description" content={description} />
+  <meta name="author" content={author} />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:image" content={socialImageURL} />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={canonicalURL} />
+  <meta property="twitter:title" content={title} />
+  <meta property="twitter:description" content={description} />
+  <meta property="twitter:image" content={socialImageURL} />
+
+  <!-- Google JSON-LD Structured data -->
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  {@html serializeSchema(structuredData)}
+</svelte:head>
 
 <Header />
 
