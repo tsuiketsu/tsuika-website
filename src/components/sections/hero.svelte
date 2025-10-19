@@ -21,7 +21,7 @@
   <p
     class="text-muted-foreground mx-auto mt-2.5 max-w-xs text-sm leading-snug sm:text-base md:max-w-xl md:text-lg lg:mt-2.5"
   >
-    Capture what’s valuable, keep it encrypted or share it freely and then
+    Capture what&apos;s valuable, keep it encrypted or share it freely and then
     collaborate to make something big.
   </p>
 

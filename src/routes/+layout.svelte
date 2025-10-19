@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/state';
   import '../app.css';
+  import { SITE } from '../config';
   import Header from '../components/header.svelte';
   import { ModeWatcher } from 'mode-watcher';
   import { serializeSchema } from '@/utils';
@@ -34,12 +35,11 @@
     return () => matcher.removeEventListener('change', onUpdate);
   });
 
-  const title = 'Tsuika';
-  const description = 'Your bookmarking friend';
-  const author = 'ImRayy';
+  const title = SITE.title;
+  const description = SITE.description;
+  const author = SITE.author;
   const canonicalURL = new URL(page.url.pathname, page.url).toString();
-  const socialImageURL =
-    'https://ik.imagekit.io/rayshold/projects/tsuika/tsuika-screenshot.webp';
+  const socialImageURL = SITE.image;
 
   const structuredData = {
     '@context': 'https://schema.org',
