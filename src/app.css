@@ -86,5 +86,9 @@
 
   body {
     @apply bg-background text-foreground;
+
+    .anchor-tag {
+      @apply font-medium text-blue-500 underline dark:text-blue-400;
+    }
   }
 }

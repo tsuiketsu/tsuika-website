@@ -14,5 +14,9 @@ export const faqs = [
   {
     q: 'Is my account protected?',
     a: 'Yes, your account is secure. Safety measures are implemented from registration to login, and you can enable two-factor authentication (2FA) using authenticator apps. Email or phone OTPs are not supported for added security.'
+  },
+  {
+    q: 'Can I self host?',
+    a: 'Yes, here you go <a href="https://github.com/tsuiketsu/compose" target="_blank" rel="noopener noreferrer" class="anchor-tag">docker-compose</a>'
   }
 ];

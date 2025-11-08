@@ -46,7 +46,7 @@
         class="pb-4 text-start"
         transition:slide
       >
-        {content}
+        {@html content}
       </p>
     {/if}
   </div>
