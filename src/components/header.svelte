@@ -52,7 +52,7 @@
     <span class="bg-foreground/20 mx-2 hidden h-5 w-[1px] md:block"></span>
     <div class="ml-auto inline-flex items-center gap-2 md:ml-0">
       <ThemeToggle />
-      <Button href={`${siteUrl}/login`}>Get Started</Button>
+      <Button href="https://github.com/tsuiketsu/tsuika">Get Started</Button>
       <span class="bg-foreground/20 mx-2 h-5 w-[1px] md:hidden"></span>
       <Button
         variant="outline"
